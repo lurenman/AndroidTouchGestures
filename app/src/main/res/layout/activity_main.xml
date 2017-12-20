@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.lurenman.androidtouchgestures.MainActivity">
+
+    <Button
+        android:id="@+id/bt_GestureDetector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GestureDetector" />
+    <Button
+        android:id="@+id/bt_VelocityTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="VelocityTracker" />
+    <Button
+        android:id="@+id/bt_MultiTouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="MultiTouch" />
+    <Button
+        android:id="@+id/bt_ViewDragHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="ViewDragHelper" />
+
+    <Button
+        android:id="@+id/bt_Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Scroll" />
+
+</LinearLayout>
