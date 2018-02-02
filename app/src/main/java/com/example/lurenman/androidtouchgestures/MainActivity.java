@@ -1,13 +1,14 @@
 package com.example.lurenman.androidtouchgestures;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.lurenman.androidtouchgestures.activity.GestureDetectorActivity;
 import com.example.lurenman.androidtouchgestures.activity.MultiTouchActivity;
+import com.example.lurenman.androidtouchgestures.activity.ScaleGestureDetectorActivity;
 import com.example.lurenman.androidtouchgestures.activity.ScrollMainActivity;
 import com.example.lurenman.androidtouchgestures.activity.VelocityTrackerActivity;
 import com.example.lurenman.androidtouchgestures.activity.ViewDragHelperActivity;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button bt_MultiTouch;
     private Button bt_ViewDragHelper;
     private Button bt_Scroll;
+    private Button bt_ScaleGestureDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         bt_GestureDetector = (Button) findViewById(R.id.bt_GestureDetector);
+        bt_ScaleGestureDetector = (Button) findViewById(R.id.bt_ScaleGestureDetector);
         bt_VelocityTracker = (Button) findViewById(R.id.bt_VelocityTracker);
         bt_MultiTouch = (Button) findViewById(R.id.bt_MultiTouch);
         bt_ViewDragHelper = (Button) findViewById(R.id.bt_ViewDragHelper);
@@ -41,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GestureDetectorActivity.class);
+                startActivity(intent);
+            }
+        });
+        bt_ScaleGestureDetector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ScaleGestureDetectorActivity.class);
                 startActivity(intent);
             }
         });

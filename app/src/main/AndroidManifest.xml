@@ -23,6 +23,7 @@
         <activity android:name=".activity.ScrollMainActivity" />
         <activity android:name=".activity.ScrollActivity" />
         <activity android:name=".activity.ScrollerActivity" />
+        <activity android:name=".activity.ScaleGestureDetectorActivity" />
     </application>
 
 </manifest>
